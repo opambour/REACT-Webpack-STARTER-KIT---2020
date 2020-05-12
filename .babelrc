@@ -1,0 +1,32 @@
+{
+    "presets": [
+        [
+            "@babel/preset-env",
+            {
+                "targets": {
+                    "node": "current",
+                    "esmodules": true
+                },
+                "useBuiltIns": "entry"
+            }
+        ],
+        [
+            "@babel/preset-react",
+            {
+                "pragma": "dom",
+                "pragmaFrag": "DomFrag",
+                "throwIfNamespace": false,
+                "useSpread": true // object spread & props spread
+            }
+        ]
+    ],
+    "plugins": [
+        "@babel/plugin-transform-runtime",
+        "@babel/plugin-syntax-dynamic-import",
+        ["transform-class-properties", { "spec": true }],
+        ["@babel/plugin-transform-classes", { "loose": true }],
+        ["@babel/plugin-proposal-class-properties", { "loose": true }],
+        ["@babel/plugin-proposal-object-rest-spread", { "loose": true, "useBuiltIns": true }],
+        "react-hot-loader/babel"
+    ]
+}

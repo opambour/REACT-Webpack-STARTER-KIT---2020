@@ -1,0 +1,46 @@
+{
+    "env": {
+        "browser": true,
+        "commonjs": true,
+        "es6": true,
+        "node": true
+    },
+    "extends": [
+        "eslint:recommended",
+        "plugin:react/recommended",
+        "airbnb",
+        "prettier",
+        "prettier/react"
+    ],
+    "globals": {
+        "Atomics": "readonly",
+        "SharedArrayBuffer": "readonly"
+    },
+    "parser": "babel-eslint",
+    "parserOptions": {
+        "ecmaFeatures": {
+            "jsx": true,
+            "experimentalObjectRestSpread": true,
+            "modules": true
+        },
+        "ecmaVersion": 11,
+        "sourceType": "module",
+        "no-useless-constructor": false
+    },
+    "plugins": ["react", "prettier"],
+    "rules": {
+        "prettier/prettier": "error",
+        "global-require": "off",
+        "no-console": "off",
+        "no-plusplus": "off",
+        // "no-unused-vars": "off",
+        "import/prefer-default-export": "off",
+        "import/extensions": "off",
+        "import/no-unresolved": "off",
+        "react/prefer-stateless-function": "off",
+        "no-useless-constructor": "off",
+        "jsx-a11y/anchor-is-valid": "off",
+        "react/state-in-constructor": "off",
+        "react/button-has-type": "off"
+    }
+}
