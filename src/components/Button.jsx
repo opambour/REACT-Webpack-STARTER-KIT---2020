@@ -2,11 +2,11 @@ import React, { Component } from 'react';
 import PropTypes from 'prop-types';
 
 // functional or stateless component
-// function ButtonComponent(props) {
+// const ButtonComponent = (props) => {
 //     const { buttonName } = props;
 
 //     return <button>{buttonName}</button>;
-// }
+// };
 
 // class component
 export default class Button extends Component {
