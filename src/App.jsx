@@ -1,16 +1,17 @@
 import React, { Component } from 'react';
 import { hot } from 'react-hot-loader/root';
-import loadable from '@loadable/component';
+// import loadable from '@loadable/component';
 // import { lazy } from '@loadable/component';
 
 import Header from './pages/includes/Header';
 import Content from './pages/includes/Content';
 import Footer from './pages/includes/Footer';
+import ButtonCounter from './components/ButtonCounter';
 
 // ---- loadable with fallback
-const ButtonCounter = loadable(() => import('./components/ButtonCounter'), {
-    fallback: <div>Loading...</div>
-});
+// const ButtonCounter = loadable(() => import('./components/ButtonCounter'), {
+//     fallback: <div>Loading...</div>
+// });
 
 /**
  * @loadable/component exposes a lazy method that acts similarly as React.lazy one.

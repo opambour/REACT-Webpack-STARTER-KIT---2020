@@ -40,7 +40,7 @@ class ButtonCounter extends Component {
 
         return (
             <>
-                <h2>Button Counter App: React Way</h2>
+                <h2>Button Counter App: React State Way</h2>
 
                 <Button
                     buttonType="button"
